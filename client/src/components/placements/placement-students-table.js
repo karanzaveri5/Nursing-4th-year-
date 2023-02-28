@@ -51,7 +51,7 @@ const PlacementStudentsTable = forwardRef(({ data = {} }, ref) => {
 
     const studentsPlacements = useMemo(() => data.students.map((student) => ({
         ...student,
-        name: `${student.fname} ${student.lname}`,
+        name: `${student.hname} ${student.lname}`,
         placementLocationId: placementMap[student._id]?.placementLocationId || "",
         notes: placementMap[student._id]?.notes || ""
     })), [data, placementMap]);

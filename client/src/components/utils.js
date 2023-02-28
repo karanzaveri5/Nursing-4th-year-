@@ -51,7 +51,7 @@ export const INSTRUCTOR_IMPORT_REQUIRED_HEADERS = {
 export const STUDENT_IMPORT_REQUIRED_HEADERS = {
     "First Name": "fname",
     "Last Name": "lname",
-    "Student ID": "studentId",
+    "#": "studentId",
     Email: "email",
     // "Phone Number": "phoneNumber",
     // "School Name": "schoolName",

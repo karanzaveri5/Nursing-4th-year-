@@ -125,16 +125,19 @@ function Instructors() {
 
     const columns = useMemo(() => [
         {
-            name: "fname", label: "First Name"
+            name: "fname", label: "Name"
         },
         {
-            name: "lname", label: "Last Name"
+            name: "lname", label: "Submisiion Time"
         },
         {
-            name: "email", label: "Email Address"
+            name: "email", label: "Placement Type"
         },
         {
-            name: "comments", label: "Comments"
+            name: "comments", label: "Agency Name"
+        },
+        {
+            name: "note", label: "Note for Instructor"
         },
         {
             name: "",

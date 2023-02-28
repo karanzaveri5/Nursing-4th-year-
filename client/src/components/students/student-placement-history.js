@@ -24,7 +24,7 @@ export default function StudentPlacementHistory({ placementsHistory, placementLo
                     "Placement Date": new Date(placement.updatedAt).toLocaleString(),
                     "Location Name": location.name,
                     "Location Campus": location.hospital.name,
-                    "Location Instructor": `${location.instructor.fname} ${location.instructor.lname}`,
+                    "Location Instructor": `${location.instructor.hname} ${location.instructor.lname}`,
                     "Location Unit": location.unit,
                     "Location Section": location.section,
                     "Location Shift": location.shift
