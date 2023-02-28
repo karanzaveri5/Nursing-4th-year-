@@ -128,62 +128,62 @@ function PlacementLocations() {
         {
             name: "name", label: "Name"
         },
-        {
-            name: "hospital",
-            label: "Campus"
-            // options: {
-            //     // eslint-disable-next-line react/no-unstable-nested-components
-            //     customBodyRender: (value) => {
-            //         if (value) {
-            //             return value.campus;
-            //             // (
-            //             //     <div>
-            //             //         {`${value.name}, ${value.campus}`}
-            //             //         <br />
-            //             //         {`${value.address}`}
-            //             //     </div>
-            //             // );
-            //         }
+        // {
+        //     name: "hospital",
+        //     label: "Campus"
+        //     // options: {
+        //     //     // eslint-disable-next-line react/no-unstable-nested-components
+        //     //     customBodyRender: (value) => {
+        //     //         if (value) {
+        //     //             return value.campus;
+        //     //             // (
+        //     //             //     <div>
+        //     //             //         {`${value.name}, ${value.campus}`}
+        //     //             //         <br />
+        //     //             //         {`${value.address}`}
+        //     //             //     </div>
+        //     //             // );
+        //     //         }
 
-            //         return "";
-            //     }
-            // }
-        },
-        {
-            name: "instructor",
-            label: "Instructor"
-            // options: {
-            //     // eslint-disable-next-line react/no-unstable-nested-components
-            //     customBodyRender: (value) => {
-            //         if (value) {
-            //             return `${value.fname} ${value.lname}`;
-            //             // return (
-            //             //     <div>
-            //             //         {`${value.fname} ${value.lname}, ${value.number}`}
-            //             //         <br />
-            //             //         {`${value.email}`}
-            //             //     </div>
-            //             // );
-            //         }
+        //     //         return "";
+        //     //     }
+        //     // }
+        // },
+        // {
+        //     name: "instructor",
+        //     label: "Instructor"
+        //     // options: {
+        //     //     // eslint-disable-next-line react/no-unstable-nested-components
+        //     //     customBodyRender: (value) => {
+        //     //         if (value) {
+        //     //             return `${value.fname} ${value.lname}`;
+        //     //             // return (
+        //     //             //     <div>
+        //     //             //         {`${value.fname} ${value.lname}, ${value.number}`}
+        //     //             //         <br />
+        //     //             //         {`${value.email}`}
+        //     //             //     </div>
+        //     //             // );
+        //     //         }
 
-            //         return "";
-            //     }
-            // }
+        //     //         return "";
+        //     //     }
+        //     // }
+        // },
+        {
+            name: "unit", label: "Submission Time"
         },
         {
-            name: "unit", label: "Unit"
+            name: "section", label: "Placement Type"
+        },
+        // {
+        //     name: "day", label: "Day"
+        // },
+        {
+            name: "shift", label: "Agency Name"
         },
         {
-            name: "section", label: "Section"
-        },
-        {
-            name: "day", label: "Day"
-        },
-        {
-            name: "shift", label: "Shift"
-        },
-        {
-            name: "seats", label: "Seats"
+            name: "seats", label: "Note for Instructor"
         },
         {
             name: "",

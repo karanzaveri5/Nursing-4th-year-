@@ -163,54 +163,48 @@ function Students() {
     ), []);
 
     const columns = useMemo(() => [
+        // {
+        //     name: "studentId", label: "#", options: { filter: false }
+        // },
         {
-            name: "studentId", label: "Student ID", options: { filter: false }
+            name: "fname", label: "Name", options: { filter: false }
         },
         {
-            name: "fname", label: "First name", options: { filter: false }
+            name: "lname", label: "Contact Information", options: { filter: false }
         },
         {
-            name: "lname", label: "Last name", options: { filter: false }
-        },
-        {
-            name: "email", label: "Email", options: { filter: false }
+            name: "email", label: "Placement Type", options: { filter: false }
         },
         // {
         //     name: "phoneNumber", label: "Phone number"
         // },
-        // { name: "school", label: "School" },
+        { name: "school", label: "Car" },
         {
             name: "year",
-            label: "Year",
+            label: "Languages",
             options: {
-                filter: true,
-                filterType: "dropdown",
-                filterOptions: { names: getYearsList() },
-                filterList: filters.year ? [filters.year] : []
+                filter: false
             }
         },
         {
             name: "term",
-            label: "Term",
+            label: "Capacity",
             options: {
-                filter: true,
-                filterType: "dropdown",
-                filterOptions: { names: TermsList },
-                filterList: filters.term ? [filters.term] : []
+                filter: false
             }
         },
-        {
-            name: "placementsHistoryLength",
-            label: "Placements",
-            options: {
-                filter: false,
-                // eslint-disable-next-line react/no-unstable-nested-components
-                customBodyRender: (value) => (value > 0 ? value : <em>None</em>)
-            }
-        },
-        {
-            name: "notes", label: "Notes", options: { filter: false }
-        },
+        // {
+        //     name: "placementsHistoryLength",
+        //     label: "Placements",
+        //     options: {
+        //         filter: false,
+        //         // eslint-disable-next-line react/no-unstable-nested-components
+        //         customBodyRender: (value) => (value > 0 ? value : <em>None</em>)
+        //     }
+        // },
+        // {
+        //     name: "notes", label: "Notes", options: { filter: false }
+        // },
         {
             name: "",
             options: {

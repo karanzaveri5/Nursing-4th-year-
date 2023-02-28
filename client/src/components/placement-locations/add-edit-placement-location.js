@@ -32,7 +32,7 @@ export default function AddEditPlacementLocation() {
     })), [hospitalStore.list]);
 
     const instructorsList = useMemo(() => instructorStore.list.slice().map((instructor) => ({
-        name: `${instructor.fname} ${instructor.lname}`,
+        name: `${instructor.hname} ${instructor.lname}`,
         value: instructor._id
     })), [hospitalStore.list]);
 

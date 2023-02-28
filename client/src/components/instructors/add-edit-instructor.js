@@ -49,7 +49,7 @@ export default function AddEditInstructor() {
         let err = null;
 
         if (!value) {
-            err = "Please enter the instructor's first name";
+            err = "Please enter the instructor's Name";
         }
 
         fnameRef.current.setError(err);
@@ -79,12 +79,12 @@ export default function AddEditInstructor() {
     }, []);
 
     const handleSubmit = useCallback(async () => {
-        const fname = fnameRef.current.value();
+        const hname = fnameRef.current.value();
         const lname = lnameRef.current.value();
         const email = emailRef.current.value();
         const comments = commentsRef.current.value();
 
-        const isFNameValid = validateFName(fname);
+        const isFNameValid = validateFName(hname);
         const isLNameValid = validateLName(lname);
         const isEmailValid = validateEmailAddress(email);
 
@@ -93,7 +93,7 @@ export default function AddEditInstructor() {
         }
 
         const params = {
-            fname, lname, email, comments
+            hname, lname, email, comments
         };
 
         if (editObj) {
@@ -114,9 +114,9 @@ export default function AddEditInstructor() {
         return (
             <Stack sx={{ width: "40%" }} spacing={2}>
                 <TextField
-                    label="First name"
+                    label="Name"
                     ref={fnameRef}
-                    value={editObj?.fname}
+                    value={editObj?.hname}
                     required
                     autoFocus
                 />

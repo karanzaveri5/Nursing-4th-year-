@@ -126,14 +126,14 @@ function Hospitals() {
 
     const columns = useMemo(() => [
         {
-            name: "name", label: "Name"
+            name: "name", label: " Agency Name"
         },
         {
-            name: "campus", label: "Campus"
+            name: "campus", label: " AgencyType"
         },
-        {
-            name: "address", label: "Address"
-        },
+        // {
+        //     name: "address", label: "Address"
+        // },
         {
             name: "",
             options: {

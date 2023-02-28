@@ -138,7 +138,7 @@ export default function AddEditStudent() {
         return (
             <Stack sx={{ width: "50%", my: 2 }} spacing={2}>
                 <TextField
-                    label="Student ID"
+                    label="Student ID\"
                     ref={studentIdRef}
                     value={editObj?.studentId}
                     required
