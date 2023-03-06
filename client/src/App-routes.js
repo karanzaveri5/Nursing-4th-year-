@@ -40,7 +40,7 @@ export default function AppRoutes() {
         <Routes>
             <Route path="/login" element={userData.user ? <Navigate to="/students" replace /> : <Login />} />
 
-            <Route path="/agencysignup" element={<AgencySignup />} />
+            {/* <Route path="/agencysignup" element={<AgencySignup />} /> */}
 
             <Route element={<RequireAuth />}>
                 <Route path="/students" element={<Outlet />}>
