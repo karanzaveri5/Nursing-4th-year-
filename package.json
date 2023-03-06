@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@expo/webpack-config": "^18.0.1"
+  }
+}
